@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn5604mid1nor"]
+
+[ext_resource type="Texture2D" uid="uid://cyxio7voe3ueu" path="res://ressources/curses_vector_24x36.png" id="1_qrqfw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdgeb"]
+atlas = ExtResource("1_qrqfw")
+region = Rect2(360, 36, 24, 36)
+
+[node name="stairs_down" type="Sprite2D"]
+modulate = Color(0, 0.752941, 0.368627, 1)
+position = Vector2(53, -24)
+texture = SubResource("AtlasTexture_vdgeb")
