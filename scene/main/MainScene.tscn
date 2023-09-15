@@ -1,14 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://bkun0f6jn3ag5"]
+[gd_scene load_steps=7 format=3 uid="uid://bkun0f6jn3ag5"]
 
 [ext_resource type="Texture2D" uid="uid://bc1jhd8euktaw" path="res://ressources/icon.svg" id="1_47nj0"]
+[ext_resource type="Script" path="res://scene/main/MainScene.gd" id="1_xrb1i"]
 [ext_resource type="Texture2D" uid="uid://cyxio7voe3ueu" path="res://ressources/curses_vector_24x36.png" id="2_15nwp"]
 [ext_resource type="Script" path="res://scene/main/InitWorld.gd" id="3_anvpl"]
+[ext_resource type="Script" path="res://scene/main/PCmove.gd" id="4_aydfk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vdgeb"]
 atlas = ExtResource("2_15nwp")
 region = Rect2(216, 540, 24, 36)
 
 [node name="MainScene" type="Node2D"]
+script = ExtResource("1_xrb1i")
 
 [node name="Icon" type="Sprite2D" parent="."]
 position = Vector2(100, 100)
@@ -21,3 +24,6 @@ texture = SubResource("AtlasTexture_vdgeb")
 
 [node name="InitWorld" type="Node2D" parent="."]
 script = ExtResource("3_anvpl")
+
+[node name="PCmove" type="Node2D" parent="."]
+script = ExtResource("4_aydfk")
